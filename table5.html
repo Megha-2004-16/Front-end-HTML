@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        tr,
+        td{
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td rowspan="2">r1c1</td>
+            <td >r1c3</td>
+            <td rowspan="2">r1c4</td>
+            <td rowspan="2" colspan="2">r1c5</td>
+        </tr>
+        <tr>
+            <td>r2c3</td>
+        </tr>
+        
+        <tr>
+            <td>r3c1</td>
+            <td>r3c4</td>
+            <td>r3c6</td>
+        </tr>
+        <tr>
+            <td>r4c1</td>
+            <td colspan="2">r4c2</td>
+            <td rowspan="2">r4c4</td>
+            <td>r4c5</td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2">r5c1</td>
+            <td rowspan="2">r5c3</td>
+            <td rowspan="3">r5c5</td>
+        </tr>
+        <tr>
+            <td>r6c4</td>
+        </tr>
+    </table>
+
+    <hr><hr>
+    <th>Figure-1</th>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td rowspan="3">5</td>
+        </tr>
+        <tr>
+            <td rowspan="3">6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td rowspan="2">10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            
+        </tr>
+    </table>
+    <hr><hr>
+    <table>
+        <tr>
+            <td colspan="3">1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td colspan="3" rowspan="2">4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td colspan="2">6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+    </table>
+
+    <hr><hr>
+    <fieldset>
+        <legend></legend>
+    <h1>Reservation Request</h1>
+    <form action="" enctype="application/x-www-form-urlencoded" autocomplete="off" method="post">
+        <fieldset>
+            <legend>General Information</legend>
+            <label for="date">Arrival date:</label>
+            <input type="datetime" name="date" id="date" placeholder="12/39/2026" required>Arrival date is invalid.
+            <br><br>
+            <label for="Nights">Nights:</label>
+            <input type="text" name="num" id="num" placeholder="three" required>nights must be numbers.
+            <br><br>
+            
+            <label for=""> Adults:</label>
+        <select>
+            <option value="null">1</option>
+            <option value="0"> 0</option>
+            <option value="1"> 1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <br><br>
+        <label for=""> children:</label>
+        <select>
+            <option value="null">0</option>
+            <option value="1"> 1</option>
+            <option value="2"> 2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        </fieldset>
+           <br><br>
+           <form action="" enctype="application/x-www-form-urlencoded" autocomplete="off" method="post">
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="">Room type:</label>
+                <input type="radio" name="room" value="Standard" >Standard
+                <input type="radio" name="room" value="Business" >Business
+                <input type="radio" name="room" value="Suite" >Suite
+
+                <br>
+                <br>
+                <label for="">Bed type:</label>
+                <input type="radio" name="bed" value="King" >King
+                <input type="radio" name="bed" value="Double" >Double double
+                <br>
+                <input type="radio" name="bed" value="Smoking" >Smoking
+                </fieldset>
+
+                <form enctype="application/x-www-form-urlencoded" autocomplete="off" method="post">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" required>Name is required
+                        <br><br>
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="graceyahoo.com">Email address is invalid
+                        <br><br>
+                        <label for="">Phone</label>
+                        <input type="number" placeholder="123-456-789">Phone number is invalid
+
+                        </fieldset>
+                        <br><br>
+                <input type="submit" value="Submit Reservation">
+                <input type="reset" value="clear">
+
+
+</form>
+
+<hr><hr>
+
+<form enctype="application/x-www-form-urlencoded" autocomplete="off" method="post">
+    <fieldset>
+        <legend>Your Details:</legend>
+        <label for="">name:</label>
+        <input type="text">
+        <br><br>
+        <label for="Email">Email</label>
+        <input type="email">
+        <br>
+        </fieldset>
+
+        <form enctype="application/x-www-form-urlencoded" autocomplete="off" method="post">
+            <fieldset>
+                <legend>Your Review:</legend>
+                <label for="">How did you hear about us?</label>
+                <select>
+                    <option value="Google">Google</option>
+                    <option value="instagram"> instagram</option>
+                </select>
+                <br><br>
+        <label for="">Would you visit again?</label><br>
+        <input type="radio" value="yes">yes
+        <input type="radio" value="no">no
+        <input type="radio" value="no">maybe
+
+        <br><br>
+        <label for="">Comments:</label><br>
+        <textarea name="Comments:" id="" cols="30" rows="5"></textarea>
+        <br>
+
+        <label for="">Sign me up for email updates</label>
+        <label>
+            <input type="checkbox" name="" id="" value="" checked>
+        </label><br>
+
+        <input type="submit" value="Submit review">
+
+</body>
+</html>
